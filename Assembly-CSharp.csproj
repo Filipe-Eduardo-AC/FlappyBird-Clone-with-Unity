@@ -61,12 +61,15 @@
     <Analyzer Include="C:\Program Files\Unity 2023.2.4f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\VariavelCompartilhadaFloat.cs" />
     <Compile Include="Assets\Scripts\Obstaculo.cs" />
+    <Compile Include="Assets\Scripts\InterfaceGameOver.cs" />
     <Compile Include="Assets\Scripts\Diretor.cs" />
     <Compile Include="Assets\Scripts\Pontuacao.cs" />
     <Compile Include="Assets\Scripts\Aviao.cs" />
     <Compile Include="Assets\Scripts\Carrossel.cs" />
     <Compile Include="Assets\Scripts\GeradorDeObstaculos.cs" />
+    <Compile Include="Assets\Scripts\ControleDeDificuldade.cs" />
     <Compile Include="Assets\Scripts\MaoPiscando.cs" />
   </ItemGroup>
   <ItemGroup>
