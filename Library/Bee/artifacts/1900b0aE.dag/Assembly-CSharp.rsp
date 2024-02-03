@@ -403,11 +403,14 @@
 -analyzer:"C:/Program Files/Unity 2023.2.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/Aviao.cs"
 "Assets/Scripts/Carrossel.cs"
+"Assets/Scripts/ControleDeDificuldade.cs"
 "Assets/Scripts/Diretor.cs"
 "Assets/Scripts/GeradorDeObstaculos.cs"
+"Assets/Scripts/InterfaceGameOver.cs"
 "Assets/Scripts/MaoPiscando.cs"
 "Assets/Scripts/Obstaculo.cs"
 "Assets/Scripts/Pontuacao.cs"
+"Assets/Scripts/VariavelCompartilhadaFloat.cs"
 -langversion:9.0
 
 /deterministic

@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class Diretor : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject imagemGameOver;
     private Aviao aviao;
     private Pontuacao pontuacao;
+    private InterfaceGameOver interfaceGameOver;
 
     private void Start()
     {
         this.aviao = Object.FindFirstObjectByType(typeof(Aviao)) as Aviao;
         this.pontuacao = Object.FindFirstObjectByType(typeof(Pontuacao)) as Pontuacao;
+        this.interfaceGameOver = Object.FindFirstObjectByType(typeof(InterfaceGameOver)) as InterfaceGameOver;
     }
 
     public void FinalizarJogo()
     {
         Time.timeScale = 0;
-        this.imagemGameOver.SetActive(true);
+        this.pontuacao.SalvarRecorde();
+        this.interfaceGameOver.MostrarInterface();
     }
 
     public void ReiniciarJogo()
     {
-        this.imagemGameOver.SetActive(false);
+        this.interfaceGameOver.EsconderInterface();
         Time.timeScale = 1;
         this.aviao.Reiniciar();
         this.DestruirObstaculos();
